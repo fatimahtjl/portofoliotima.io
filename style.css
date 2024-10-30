@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman' ;
+}
+body {
+    background: rgb(100, 205, 247);
+    color: white;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 10%;
+    background: rgb(255, 147, 165);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color:  rgb(100, 205, 247);
+}
+
+.halaman {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.halaman-konten {
+    max-width: 2000px; 
+}
+
+.halaman-konten h1 {
+    font-size: 56px;
+    font-weight: 700; 
+    line-height: 1.2;
+   
+}
+
+.halaman-konten h3 {
+    font-size: 32px;
+    font-weight: 700;
+    
+}
+
+.halaman-konten p {
+    font-size: 18px;
+    color: black;
+    margin-top: 20px;
+}
+
+.halaman-konten span {
+    color: rgb(255, 147, 165);
+}
+
+.halaman-konten span h3 {
+    color: rgb(255, 147, 165); 
+}
+
+.halaman-konten .btn-box {
+    display: flex ;
+    justify-content: space-between;
+    width: 90px;
+    height: 50px;
+   
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    width: 300px;
+    height: 100%;
+    background: white ;
+    border: 2px solid rgb(255, 147, 165);
+    border-radius: 15px;
+    font-size: 19px;
+    color: rgb(255, 147, 165);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 15px;
+    background: black;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.logo1 {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.logo1 a {
+    position: relative;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+   border: 2px ;
+}
+
+.img-box img {
+    border-radius: 100%;
+    width: 350px;
+    height: 480px;
+    margin-left: 200px;
+    margin-top: 130px;
+}
+
+
+
+
