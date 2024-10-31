@@ -10,13 +10,13 @@ body {
 }
 
 .header {
-    position: fixed;
+    position: fixed; /* posisi tetap berada di tempat*/
     top: 0;
     left: 0;
     width: 100%;
     padding: 40px 10%;
     background: rgb(255, 147, 165);
-    display: flex;
+    display: flex; 
     justify-content: space-between;
     align-items: center;
     z-index: 100;
@@ -26,7 +26,7 @@ body {
     font-size: 25px;
     color: #ffffff;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 550;
 }
 
 
@@ -35,7 +35,7 @@ body {
     color: white;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 35px;
+    margin-left: 40px;
 }
 
 .navbar a:hover,
@@ -95,7 +95,7 @@ body {
     width: 300px;
     height: 100%;
     background: white ;
-    border: 2px solid rgb(255, 147, 165);
+    border: 2px solid rgb(255, 147, 165); 
     border-radius: 15px;
     font-size: 19px;
     color: rgb(255, 147, 165);
@@ -138,11 +138,38 @@ body {
 .logo1 a {
     position: relative;
     display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
-   border: 2px ;
+    background: transparent;
+    border: 2px solid rgb(255, 147, 165);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(255, 147, 165);
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.logo1 a :hover {
+    color: rgb(255, 147, 165);
 }
 
+.logo1 a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: .5s;
+}
+
+.logo1 a:hover::before {
+    width: 100%;
+}
 .img-box img {
     border-radius: 100%;
     width: 350px;
